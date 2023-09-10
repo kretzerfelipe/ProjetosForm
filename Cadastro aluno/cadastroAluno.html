@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .fonte {   
+                font-family: Arial; font-size: 12px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 12px;
+            }
+
+            .margin0 {
+                margin: 0;
+            }
+
+            .margin1{
+                border-style: solid;
+                padding: 15px;
+            }
+
+            .block {
+                display: block;
+                margin: 0;
+                margin-top: 1%;
+            }
+        </style>
+    </head>
+    <body>
+        <form class="fonte margin1">
+            <div class="block">
+                <label for="idNome">Nome:</label><br>
+                <input type="text" id="idNome" name="nmNome" required>
+            </div>
+
+            <div class="block">
+                <label for="idSobrenome">Sobrenome:</label><br>
+                <input type="text" id="idNome" name="nmSobrenome" required>
+            </div>
+
+            <div class="block">
+                <label for="idDataDeNascimento">Data de Nascimento:</label><br>
+                <input type="date" id="idDataDeNascimento" name="nmData" min="2000-01-01" max="2017-12-31" required>
+            </div>
+        
+            <div class="block">
+                <label for="idEndereco">Endereço:</label><br>
+                <input type="text" id="idEndereco" name="nmEnderco" required>
+            </div>
+            
+            <div class="block">
+                <label for="idNomeMae">Nome da Mãe:</label><br>
+                <input type="text" id="idNomeMae" name="nmNomeMae" required>
+            </div>
+
+            <div class="block">
+                <label for="idNomePai">Nome do Pai:</label><br>
+                <input type="text" id="idNomePai" name="nmNomePai" required>
+            </div>
+
+            <div class="block">
+                <label for="idEmail">Email:</label><br>
+                <input type="email" id="idEmail" name="nmEmail" required>
+            </div>
+
+            <div class="block">
+                <label for="idTelefone">Telefone:</label><br>
+                <input type="text" id="idTelefone" name="nmTelefone" required>
+            </div>
+
+            <div class="block">
+                <label for="idSerie">Série</label><br>
+                <input type="number" id="idSerie" name="nmSerie" min="1" max="9" required>
+            </div>
+            
+            <div class="block">
+                <p class="margin0">Sexo:</p>
+                <input type="radio" name="nmSexo" id="idFem" checked>
+                <label for="idFem">Feminino</label>
+                <input type="radio" name="nmSexo" id="idMasc">
+                <label for="idMasc">Masculino</label>
+            </div>
+
+            <div class="block"></div>
+                <p class="margin0">Necessidades Especiais:</p>
+                <input type="checkbox" name="nmNecessidadeEspecial" id="idAuditiva">
+                <label for="idAuditiva">Deficiênica Auditiva</label>
+                <br>
+                <input type="checkbox" name="nmNecessidadeEspecial" id="idMotora">
+                <label for="idMotora">Deficiênica Motora</label>   
+                <br>
+                <input type="checkbox" name="nmNecessidadeEspecial" id="idVisual">
+                <label for="idVisual">Deficiência Visual</label>
+                <br>
+                <input type="checkbox" name="nmNecessidadeEspecial" id="idCerebral">
+                <label for="idCerebral">Paralisia Cerebral</label>
+                <br>
+                <input type="checkbox" name="nmNecessidadeEspecial" id="idAutista">
+                <label for="idAutista">Perturbação do Espectro Autista</label>
+                <br>
+                <input type="checkbox" name="nmNecessidadeEspecial" id="idPsicologico">
+                <label for="idPsicologico">Perturbação do Foro Psciológico</label>
+                <br>
+                <input type="checkbox" name="nmNecessidadeEspecial" id="idAprendizagem">
+                <label for="idAprendizagem">Peerturbações de Aprendizagem</label>
+                <br>
+                <input type="checkbox" name="nmNecessidadeEspecial" id="idAltas">
+                <label for="idAltas">Altas Habilidades</label>
+            </div>
+
+            <br><br><button type="submit">Enviar</button>
+            <input type="reset" name="" id="" value="Limpar">
+            <br>
+        </form>
+    </body>
+</html>
