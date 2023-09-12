@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Urna Eletrônica</title>
+        <style>
+            .fonte { font-family: Arial; font-size: 12px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 12px; 
+            }
+
+            h1 {
+                text-align: center;
+                font-size: 3rem;
+            }
+
+            h2 {
+                text-align: center;
+                font-size: 2rem;
+            }
+
+            .padding {
+                padding: 5%;
+            }
+
+            .margin {
+                margin-bottom: 3%;
+            }
+
+            .margin2 {
+                margin-left: 1%;
+                margin-right: 1%;
+                padding: 0.5%;
+                margin-bottom: 2%;
+            }
+
+            .width {
+                width: 50%;
+                height: 20%;
+            }
+
+            .tamanho {
+                margin: auto;
+                text-align: center;
+                width: 50%;
+                border: 2px solid #000;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+
+            input {
+                border: none;
+                background-color: #EBEBEB;
+                padding: 1%;
+                margin-top: 4%;
+                text-align: center;
+            }
+
+        </style>
+    </head>
+    <body class="fonte">
+        <div class="tamanho">
+            <h1 class="padding">Urna Eletrônica</h1>
+            <img src="assets/img/presidente.jpg" alt="">
+            <h2>Fulano de Tal</h2>
+            <form action="">
+                <input class="width margin" type="number" id="idTelefone" name="nmTelefone" placeholder="Número Candidato" required><br>
+                <button class="margin2" type="submit">Confirmar</button>
+                <button class="margin2" type="reset">Cancelar</button>
+                <button class="margin2" type="reset submit">Branco</button>
+            </form>
+        </div>
+    </body>
+</html>

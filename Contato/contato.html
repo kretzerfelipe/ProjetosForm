@@ -3,40 +3,44 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Formulário</title>
+        <title>Contato</title>
         <style>
-            .fonte { font-family: Arial; font-size: 12px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 12px; 
+            .fonte { 
+                font-family: Arial; font-size: 12px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 12px; 
+            }
+
+            .width {
+                width: 9.5%;
             }
         </style>
     </head>
     <body>
-        <form class="fonte">
-            <label for="idNome"></label><br>
-            <input type="text" id="idNome" name="nmNome" placeholder="Nome Completo" required><br><br>
+        <form class="fonte" action="">
+            <fieldset class="width">
+            <legend>Deixe seu recado...</legend>
+                    <input type="text" id="idNome" name="nmNome" placeholder="Nome Completo" required><br><br>
 
-            <label for="idEmail"></label><br>
-            <input type="email" id="idEmail" name="nmEmail" placeholder="Email" required><br><br>
+                    <input type="email" id="idEmail" name="nmEmail" placeholder="seu@email.com" required><br><br>
 
-            <label for="idEmpresa/Organização"></label><br>
-            <input type="text" id="idEmpresa/Organização" name="nmEmpresa/Organização" placeholder="Empresa/Organização"><br><br>
+                    <input type="text" id="idEmpresa/Organização" name="nmEmpresa/Organização" placeholder="Empresa/Organização"><br><br>
 
-            <label for="idTelefone"></label><br>
-            <input type="text" id="idTelefone" name="nmTelefone" placeholder="Telefone"><br><br>
+                    <input type="text" id="idTelefone" name="nmTelefone" placeholder="Tel."><br><br>
 
-            <label for="idMotivoDoContato"></label><br>
-            <select type="select" id="idMotivoDoContato" name="nmTelefone" placeholder="Telefone">
-                <option value="Elogio">Elogio</option>
-                <option value="Problema com Produto">Problema com Produto</option>
-                <option value="Reclamção">Reclamção</option>
-                <option value="Sugestão">Sugestão</option>
-                <option value="Outro">Outro</option>
-            </select><br><br>
-            <label for="idMensagem">Mensagem:</label><br>
-            <textarea type="text" id="idMensagem" name="nmMensagem" value="" cols="22" rows="10" required></textarea><br><br>
-    
-            <br><br>
-            <button type="submit">Enviar</button>
-            <br>
+                    <select type="select" id="idMotivoDoContato" name="nmTelefone">
+                        <option value="" disabled selected>Motivo do contato</option>
+                        <option value="Elogio">Elogio</option>
+                        <option value="Problema com Produto">Problema com Produto</option>
+                        <option value="Reclamção">Reclamção</option>
+                        <option value="Sugestão">Sugestão</option>
+                        <option value="Outro">Outro</option>
+                    </select><br><br>
+
+                    <textarea class="fonte" type="text" id="idMensagem" name="nmMensagem" placeholder="Mensagem" value="" cols="31" rows="10" required></textarea><br><br>
+            
+                    <br><br>
+                    <button type="submit">Enviar</button>
+                    <br>
+            </fieldset>
         </form>
     </body>
 </html>
